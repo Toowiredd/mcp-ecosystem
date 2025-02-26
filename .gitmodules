@@ -1,0 +1,6 @@
+[submodule "submodules/mcp-servers"]
+	path = submodules/mcp-servers
+	url = /root/mcp-servers
+[submodule "submodules/mcp-gateway"]
+	path = submodules/mcp-gateway
+	url = /root/mcp-gateway

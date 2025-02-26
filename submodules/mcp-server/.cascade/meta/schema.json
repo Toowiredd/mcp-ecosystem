@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "memory": {
+      "type": "object",
+      "required": ["id", "type", "content", "created_at", "updated_at"],
+      "properties": {
+        "id": { "type": "string", "format": "uuid" },
+        "type": { "enum": ["build_plan", "roadmap", "status", "reference"] },
+        "content": { "type": "object" },
+        "created_at": { "type": "string", "format": "date-time" },
+        "updated_at": { "type": "string", "format": "date-time" },
+        "expires_at": { "type": "string", "format": "date-time" },
+        "version": { "type": "integer", "minimum": 1 },
+        "critique": {
+          "type": "object",
+          "properties": {
+            "strengths": { "type": "array", "items": { "type": "string" } },
+            "weaknesses": { "type": "array", "items": { "type": "string" } },
+            "improvements": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    }
+  }
+}

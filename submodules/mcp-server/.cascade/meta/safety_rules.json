@@ -1,0 +1,53 @@
+{
+  "rules": {
+    "file_modification": {
+      "require_backup": true,
+      "require_safety_check": true,
+      "max_backups": 5,
+      "backup_frequency_hours": 24
+    },
+    "repository_analysis": {
+      "rules": [
+        "Always check if directory exists before creating",
+        "Check for existing .cascade directory",
+        "Verify file ownership and permissions",
+        "Check for existing configuration files",
+        "Look for project-specific patterns"
+      ],
+      "protected_patterns": [
+        ".git/*",
+        "*.lock",
+        "config.*",
+        "*.conf",
+        "*.yaml",
+        "*.yml"
+      ],
+      "high_risk_operations": [
+        "delete_files",
+        "modify_config",
+        "change_permissions",
+        "modify_dependencies"
+      ]
+    }
+  },
+  "critique": {
+    "strengths": [
+      "Clear safety rules",
+      "Protected file patterns",
+      "Risk categorization",
+      "Backup requirements"
+    ],
+    "weaknesses": [
+      "Static rule set",
+      "No dynamic rule learning",
+      "Limited file patterns",
+      "Basic risk assessment"
+    ],
+    "improvements": [
+      "Add dynamic rule learning",
+      "Expand protected patterns",
+      "Add risk scoring system",
+      "Implement rule versioning"
+    ]
+  }
+}

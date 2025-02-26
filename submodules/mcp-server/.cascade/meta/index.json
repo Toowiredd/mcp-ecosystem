@@ -1,0 +1,15 @@
+{
+  "memories": {
+    "build-plan-001": {
+      "path": "data/memories/build_plan.json",
+      "type": "build_plan",
+      "version": 1,
+      "last_updated": "2025-02-23T01:21:42Z"
+    }
+  },
+  "locks": {},
+  "stats": {
+    "total_memories": 1,
+    "last_cleanup": "2025-02-23T01:21:42Z"
+  }
+}

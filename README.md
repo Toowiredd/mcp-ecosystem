@@ -19,3 +19,9 @@ Neurodivergent Communication Transformer and Microservice Gateway System
 - Docker-based modularity
 - AI-buildable components
 - Accessibility-focused design
+## Submodules
+- MCP Servers
+- MCP Gateway
+- Kong Gateway
+- MCP Core Server
+- MCP Core Components
