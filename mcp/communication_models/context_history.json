@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2025-02-26T05:20:27.008806",
+    "original": "we ned to implemnt a commuication systm that undrstands adhd brain processing",
+    "corrected": "we need to implement a communication system that understands ADHD brain processing",
+    "intent": {
+      "primary_action": "implement",
+      "key_concepts": [
+        {
+          "lemma": "need",
+          "pos": "VERB",
+          "semantic_weight": 

@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  kong-gateway:
+    build: 
+      context: .
+      dockerfile: kong-gateway-dockerfile
+    container_name: mcp-kong-gateway
+    restart: always
+    ports:
+      - "8000:8000"
+      - "8443:8443"
+    volumes:
+      - ./kong.yml:/etc/kong/kong.yml
+    networks:
+      - mcp_network
+
+networks:
+  mcp_network:
+    driver: bridge

@@ -1,0 +1,8 @@
+neo4j==5.14.0
+uuid==1.30
+typing==3.7.4.3
+pytest==7.4.3
+spacy==3.7.4
+language-tool-python==2.9.0
+numpy==1.26.3
+https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.7.1/en_core_web_lg-3.7.1.tar.gz

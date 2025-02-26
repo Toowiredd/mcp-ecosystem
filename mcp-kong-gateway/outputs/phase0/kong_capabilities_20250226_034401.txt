@@ -1,0 +1,6 @@
+# Kong Gateway Capabilities
+- Authentication Management
+- Rate Limiting
+- Service Routing
+- Logging & Monitoring
+- Transformation Plugins
